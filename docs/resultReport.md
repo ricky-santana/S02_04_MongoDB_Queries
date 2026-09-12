@@ -64,9 +64,9 @@
 - ❌ MISMATCH - Query **[ 21 ]** Result does not match expected output.
 
 
-🔢 Different result lengths: 
-- **Expected:** 14
-- **Got:** 404
+🧩 Mismatch at position 0:
+- **Expected:** {"address":{},"borough":"Brooklyn","cuisine":"Delicatessen","grades":[{},{},{},{},{},{}],"location":{},"name":"Wilken'S Fine Food","restaurant_id":40356483}
+- **Actual:** {"borough":"Brooklyn","cuisine":"Delicatessen","name":"Wilken'S Fine Food","restaurant_id":40356483}
 
 ---
 - ✔️ OK - Query **[ 22 ]**
@@ -90,9 +90,9 @@
 - ❌ MISMATCH - Query **[ 28 ]** Result does not match expected output.
 
 
-🔢 Different result lengths: 
-- **Expected:** 3
-- **Got:** 1
+🧩 Mismatch at position 0:
+- **Expected:** {"address":{}}
+- **Actual:** {"address":{},"borough":"Brooklyn","cuisine":"Hamburgers","grades":[{},{},{}],"location":{},"name":"White Castle","restaurant_id":40386837}
 
 ---
 - ✔️ OK - Query **[ 29 ]**
@@ -101,12 +101,7 @@
 - ✔️ OK - Query **[ 30 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 31 ]** Result does not match expected output.
-
-
-🔢 Different result lengths: 
-- **Expected:** 10
-- **Got:** 7
+- ✔️ OK - Query **[ 31 ]**
 
 ---
 - ✔️ OK - Query **[ 32 ]**
