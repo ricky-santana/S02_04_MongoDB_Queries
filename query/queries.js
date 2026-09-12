@@ -71,7 +71,7 @@ db.restaurants.find({ borough: { $nin: ["Staten Island", "Queens", "Bronx", "Bro
 db.restaurants.find({ "grades.score": { $lte: 10 } }, { _id: 0, restaurant_id: 1, name: 1, borough: 1, cuisine: 1 });
 
 // 21. Trobar restaurants que preparen peix, no 'American' ni 'Chinees', o nom comença amb 'Wil'.
-db.restaurants.find({ $or: [{ cuisine: "Seafood" }, { name: /^Wil/ }] }, { _id: 0, restaurant_id: 1, name: 1, borough: 1, cuisine: 1 });
+db.restaurants.find({ $or: [{ cuisine: "Seafood" }, { name: /^Wil/ }] }, { _id: 0 });
 
 // 22. Trobar restaurant_id, name, i grades per grau "A", score 11, i data "2014-08-11T00:00:00Z".
 db.restaurants.find({ grades: { $elemMatch: { grade: "A", score: 11, date: ISODate("2014-08-11T00:00:00Z") } } }, { _id: 0, restaurant_id: 1, name: 1, grades: 1 });
@@ -96,7 +96,7 @@ db.restaurants.find({}, { _id: 0 }).sort({ name: -1 });
 db.restaurants.find({}, { _id: 0 }).sort({ cuisine: 1, borough: -1 });
 
 // 28. Mostrar direccions que no contenen el carrer.
-db.restaurants.find({ $or: [{ "address.street": { $exists: false } }, { "address.street": "" }] }, { _id: 0 });
+db.restaurants.find({ $or: [{ "address.street": { $exists: false } }, { "address.street": "" }] }, { _id: 0, address: 1 });
 
 // 29. Seleccionar documents on el valor de `coordinate` és de tipus Double. Mostrar el name, restaurant_id i coordinades.
 db.restaurants.find({ "location.coordinates": { $type: "double" } }, { _id: 0, name: 1, restaurant_id: 1, "location.coordinates": 1 });
