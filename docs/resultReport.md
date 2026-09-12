@@ -60,3 +60,54 @@
 ---
 - ✔️ OK - Query **[ 20 ]**
 
+---
+- ❌ MISMATCH - Query **[ 21 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 14
+- **Got:** 404
+
+---
+- ✔️ OK - Query **[ 22 ]**
+
+---
+- ✔️ OK - Query **[ 23 ]**
+
+---
+- ✔️ OK - Query **[ 24 ]**
+
+---
+- ✔️ OK - Query **[ 25 ]**
+
+---
+- ✔️ OK - Query **[ 26 ]**
+
+---
+- ✔️ OK - Query **[ 27 ]**
+
+---
+- ❌ MISMATCH - Query **[ 28 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 3
+- **Got:** 1
+
+---
+- ✔️ OK - Query **[ 29 ]**
+
+---
+- ✔️ OK - Query **[ 30 ]**
+
+---
+- ❌ MISMATCH - Query **[ 31 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 10
+- **Got:** 7
+
+---
+- ✔️ OK - Query **[ 32 ]**
+
